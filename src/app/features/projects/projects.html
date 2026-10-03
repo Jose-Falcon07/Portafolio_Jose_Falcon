@@ -1,0 +1,144 @@
+<section class="projects" id="proyectos">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="section-heading__eyebrow" i18n>
+        Proyectos
+      </span>
+
+      <h2 i18n>
+        Algunos trabajos
+        <span>destacados</span>
+      </h2>
+
+      <p i18n>
+        Proyectos académicos y personales donde aplico desarrollo frontend,
+        backend, bases de datos y buenas prácticas de software.
+      </p>
+    </div>
+
+    @if (featuredProject(); as project) {
+
+      <article class="featured-project">
+
+        <div class="featured-project__image">
+
+          @if (project.image) {
+            <img
+              [src]="project.image"
+              [alt]="project.title"
+            >
+          } @else {
+            <div class="image-placeholder">
+              <span>{{ project.title }}</span>
+              <small i18n>Imagen del proyecto</small>
+            </div>
+          }
+
+        </div>
+
+        <div class="featured-project__content">
+
+          <span
+            class="featured-project__label"
+            i18n
+          >
+            Proyecto destacado
+          </span>
+
+          <h3>
+            {{ project.title }}
+          </h3>
+
+          <p>
+            {{ project.description }}
+          </p>
+
+          <div class="featured-project__technologies">
+
+            @for (
+              technology of project.technologies;
+              track technology
+            ) {
+              <span>
+                {{ technology }}
+              </span>
+            }
+
+          </div>
+
+          <div class="featured-project__actions">
+
+            @if (project.demoUrl) {
+              <a
+                [href]="project.demoUrl"
+                class="project-button project-button--primary"
+                target="_blank"
+                rel="noopener"
+                i18n
+              >
+                Ver proyecto
+              </a>
+            }
+
+            @if (project.githubUrl) {
+              <a
+                [href]="project.githubUrl"
+                class="project-button project-button--secondary"
+                target="_blank"
+                rel="noopener"
+                i18n
+              >
+                Repositorio
+              </a>
+            }
+
+          </div>
+
+        </div>
+
+      </article>
+    }
+
+    <div class="projects__grid">
+
+      @for (
+        project of otherProjects();
+        track project.id
+      ) {
+
+        <article class="project-card">
+
+          <span class="project-card__number">
+            {{ project.order.toString().padStart(2, '0') }}
+          </span>
+
+          <h3>
+            {{ project.title }}
+          </h3>
+
+          <p>
+            {{ project.description }}
+          </p>
+
+          <div class="project-card__tags">
+
+            @for (
+              technology of project.technologies;
+              track technology
+            ) {
+              <span>
+                {{ technology }}
+              </span>
+            }
+
+          </div>
+
+        </article>
+
+      }
+
+    </div>
+
+  </div>
+</section>
