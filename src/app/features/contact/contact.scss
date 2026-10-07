@@ -1,0 +1,282 @@
+.contact-section {
+  padding: 7rem 1.5rem;
+  scroll-margin-top: 90px;
+}
+
+.contact-container {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.section-label {
+  display: inline-block;
+
+  margin-bottom: 1rem;
+
+  color: #7c6cff;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contact-info h2 {
+  margin: 0;
+
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.contact-info h2 span {
+  color: #7c6cff;
+}
+
+.description {
+  max-width: 530px;
+
+  margin-top: 1.5rem;
+
+  color: #8c8c9a;
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  margin-top: 2.5rem;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.detail-icon {
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid rgba(124, 108, 255, 0.25);
+  border-radius: 14px;
+
+  background: rgba(124, 108, 255, 0.08);
+
+  color: #7c6cff;
+  font-weight: 700;
+}
+
+.detail span {
+  display: block;
+
+  margin-bottom: 0.25rem;
+
+  color: #8c8c9a;
+
+  font-size: 0.8rem;
+}
+
+.detail strong {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.contact-card {
+  padding: 2rem;
+
+  border: 1px solid rgba(140, 140, 160, 0.15);
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(124, 108, 255, 0.07),
+      rgba(255, 255, 255, 0.02)
+    );
+
+  box-shadow:
+    0 25px 80px rgba(0, 0, 0, 0.08);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+label span {
+  color: #8c8c9a;
+  font-weight: 400;
+}
+
+input,
+textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid rgba(140, 140, 160, 0.2);
+  border-radius: 12px;
+
+  padding: 0.95rem 1rem;
+
+  background: rgba(128, 128, 128, 0.05);
+
+  color: inherit;
+
+  font: inherit;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 145px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888894;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #7c6cff;
+
+  box-shadow:
+    0 0 0 3px rgba(124, 108, 255, 0.12);
+
+  background: rgba(124, 108, 255, 0.03);
+}
+
+.submit-button {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.65rem;
+
+  border: 0;
+  border-radius: 12px;
+
+  padding: 1rem 1.25rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      #6c5cff,
+      #8c7cff
+    );
+
+  color: #fff;
+
+  font: inherit;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 35px rgba(124, 108, 255, 0.3);
+}
+
+.submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #ef5350;
+  font-size: 0.76rem;
+}
+
+.form-message {
+  padding: 0.9rem 1rem;
+
+  border-radius: 10px;
+
+  font-size: 0.85rem;
+}
+
+.success {
+  border: 1px solid rgba(46, 204, 113, 0.25);
+
+  background: rgba(46, 204, 113, 0.08);
+
+  color: #2ecc71;
+}
+
+.error-box {
+  border: 1px solid rgba(239, 83, 80, 0.25);
+
+  background: rgba(239, 83, 80, 0.08);
+
+  color: #ef5350;
+}
+
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .contact-section {
+    padding:
+      5rem
+      1rem;
+  }
+
+  .contact-card {
+    padding: 1.25rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,193 @@
+.experience-section {
+  padding: 7rem 1.5rem;
+  scroll-margin-top: 90px;
+}
+
+.experience-container {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+.section-label {
+  display: inline-block;
+  margin-bottom: 1rem;
+
+  color: #7c6cff;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0;
+
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+h2 span {
+  color: #7c6cff;
+}
+
+.intro {
+  max-width: 700px;
+
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+
+  color: #8c8c9a;
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.timeline {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+
+  position: absolute;
+  left: 7px;
+  top: 12px;
+  bottom: 12px;
+
+  width: 2px;
+
+  background: rgba(124, 108, 255, 0.25);
+}
+
+.experience-card {
+  position: relative;
+
+  padding: 1.8rem;
+
+  border: 1px solid rgba(140, 140, 160, 0.15);
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(124, 108, 255, 0.06),
+      rgba(255, 255, 255, 0.02)
+    );
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(124, 108, 255, 0.35);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2.35rem;
+  top: 2rem;
+
+  width: 14px;
+  height: 14px;
+
+  border: 3px solid #7c6cff;
+  border-radius: 50%;
+
+  background: var(--background, #fff);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin: 0 0 0.35rem 0;
+
+  font-size: 1.2rem;
+}
+
+.company {
+  color: #8c8c9a;
+  font-size: 0.9rem;
+}
+
+.period {
+  height: fit-content;
+
+  padding: 0.4rem 0.75rem;
+
+  border-radius: 999px;
+
+  background: rgba(124, 108, 255, 0.1);
+
+  color: #7c6cff;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.experience-card p {
+  color: #8c8c9a;
+
+  line-height: 1.7;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+
+  margin-top: 1.2rem;
+}
+
+.tags span {
+  padding: 0.4rem 0.7rem;
+
+  border: 1px solid rgba(124, 108, 255, 0.2);
+  border-radius: 8px;
+
+  background: rgba(124, 108, 255, 0.06);
+
+  color: #7c6cff;
+
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+@media (max-width: 650px) {
+  .experience-section {
+    padding: 5rem 1rem;
+  }
+
+  .card-header {
+    flex-direction: column;
+  }
+
+  .period {
+    width: fit-content;
+  }
+
+  .timeline {
+    padding-left: 1.6rem;
+  }
+
+  .timeline-dot {
+    left: -1.95rem;
+  }
+}
