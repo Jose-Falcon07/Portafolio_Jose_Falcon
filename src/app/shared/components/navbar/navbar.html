@@ -1,27 +1,65 @@
 <header class="navbar">
   <div class="container navbar__content">
 
-    <a href="#inicio" class="navbar__logo" (click)="closeMenu()">
+    <a
+      href="#inicio"
+      class="navbar__logo"
+      (click)="closeMenu()"
+    >
       <span>&lt;</span>
       JF
       <span>/&gt;</span>
     </a>
 
-    <nav class="navbar__links" [class.navbar__links--open]="menuOpen()">
-      <a href="#inicio" (click)="closeMenu()" i18n>Inicio</a>
-      <a href="#sobre-mi" (click)="closeMenu()" i18n>Sobre mí</a>
-      <a href="#habilidades" (click)="closeMenu()" i18n>Habilidades</a>
-      <a href="#proyectos" (click)="closeMenu()" i18n>Proyectos</a>
-      <a href="#experiencia" (click)="closeMenu()" i18n>Experiencia</a>
-      <a href="#contacto" (click)="closeMenu()" i18n>Contacto</a>
+    <nav
+      class="navbar__links"
+      [class.navbar__links--open]="menuOpen()"
+    >
+      <a href="#inicio" (click)="closeMenu()" i18n>
+        Inicio
+      </a>
+
+      <a href="#sobre-mi" (click)="closeMenu()" i18n>
+        Sobre mí
+      </a>
+
+      <a href="#habilidades" (click)="closeMenu()" i18n>
+        Habilidades
+      </a>
+
+      <a href="#proyectos" (click)="closeMenu()" i18n>
+        Proyectos
+      </a>
+
+      <a href="#experiencia" (click)="closeMenu()" i18n>
+        Experiencia
+      </a>
+
+      <a href="#contacto" (click)="closeMenu()" i18n>
+        Contacto
+      </a>
     </nav>
 
     <div class="navbar__actions">
-      <button class="language-button">
-        ES
+
+      <button
+        class="language-button"
+        type="button"
+        (click)="switchLanguage()"
+        [attr.aria-label]="
+          currentLanguage() === 'es'
+            ? 'Cambiar idioma a inglés'
+            : 'Switch language to Spanish'
+        "
+      >
+        {{ oppositeLanguage().toUpperCase() }}
       </button>
 
-      <a href="#contacto" class="contact-button" i18n>
+      <a
+        href="#contacto"
+        class="contact-button"
+        i18n
+      >
         Hagamos algo increíble
       </a>
 
@@ -38,6 +76,7 @@
           ✕
         }
       </button>
+
     </div>
 
   </div>
