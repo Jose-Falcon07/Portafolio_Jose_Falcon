@@ -1,4 +1,65 @@
 :root {
+  color-scheme: dark;
+
+  --bg-primary: #061726;
+  --bg-secondary: #0a1e2e;
+  --bg-card: #0d2436;
+
+  --text-primary: #ffffff;
+  --text-secondary: #9caec0;
+
+  --border-color: rgba(255, 255, 255, 0.1);
+
+  --accent: #20baf3;
+  --accent-secondary: #7c6cff;
+
+  --navbar-bg: rgba(6, 23, 38, 0.92);
+
+  --shadow:
+    0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+html,
+body {
+  margin: 0;
+
+  background:
+    var(--bg-primary);
+
+  color:
+    var(--text-primary);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html[data-theme='light'] {
+  color-scheme: light;
+
+  --bg-primary: #f7f9fc;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+
+  --text-primary: #162033;
+  --text-secondary: #657084;
+
+  --border-color: rgba(0, 0, 0, 0.08);
+
+  --accent: #009bd8;
+  --accent-secondary: #6857e5;
+
+  --navbar-bg: rgba(255, 255, 255, 0.92);
+
+  --shadow:
+    0 20px 60px rgba(20, 30, 50, 0.09);
+}
+
+:root {
   --bg-primary: #020f1f;
   --bg-secondary: #061b31;
 

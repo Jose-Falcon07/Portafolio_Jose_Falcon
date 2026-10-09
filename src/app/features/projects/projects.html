@@ -1,8 +1,15 @@
-<section class="projects" id="proyectos">
+<section
+  class="projects"
+  id="proyectos"
+>
   <div class="container">
 
     <div class="section-heading">
-      <span class="section-heading__eyebrow" i18n>
+
+      <span
+        class="section-heading__eyebrow"
+        i18n
+      >
         Proyectos
       </span>
 
@@ -15,27 +22,13 @@
         Proyectos académicos y personales donde aplico desarrollo frontend,
         backend, bases de datos y buenas prácticas de software.
       </p>
+
     </div>
+
 
     @if (featuredProject(); as project) {
 
       <article class="featured-project">
-
-        <div class="featured-project__image">
-
-          @if (project.image) {
-            <img
-              [src]="project.image"
-              [alt]="project.title"
-            >
-          } @else {
-            <div class="image-placeholder">
-              <span>{{ project.title }}</span>
-              <small i18n>Imagen del proyecto</small>
-            </div>
-          }
-
-        </div>
 
         <div class="featured-project__content">
 
@@ -46,59 +39,212 @@
             Proyecto destacado
           </span>
 
+
           <h3>
-            {{ project.title }}
+            <span class="project-name">
+              {{ project.title }}
+            </span>
+
+            <span i18n>
+              — Aprende inglés volando
+            </span>
           </h3>
 
-          <p>
-            {{ project.description }}
+
+          <p i18n>
+            Juego educativo de vocabulario donde el jugador pilota un avión
+            y debe seleccionar la palabra correcta en inglés mientras supera
+            diferentes desafíos.
           </p>
 
-          <div class="featured-project__technologies">
 
-            @for (
-              technology of project.technologies;
-              track technology
-            ) {
-              <span>
-                {{ technology }}
+          <div class="project-features">
+
+            <div class="feature-pill">
+              <span class="feature-icon">
+                ♡
               </span>
-            }
+
+              <span i18n>
+                Sistema de vidas
+              </span>
+            </div>
+
+
+            <div class="feature-pill">
+              <span class="feature-icon">
+                ★
+              </span>
+
+              <span i18n>
+                Puntuación
+              </span>
+            </div>
+
+
+            <div class="feature-pill">
+              <span class="feature-icon">
+                ◫
+              </span>
+
+              <span i18n>
+                Vocabulario
+              </span>
+            </div>
 
           </div>
+
+
+          <div class="project-divider"></div>
+
+
+          <div class="project-meta">
+
+            <div class="project-meta__item">
+
+              <span
+                class="project-meta__label"
+                i18n
+              >
+                Mi rol
+              </span>
+
+              <strong i18n>
+                Diseño y desarrollo
+              </strong>
+
+            </div>
+
+
+            <div class="project-meta__item">
+
+              <span
+                class="project-meta__label"
+                i18n
+              >
+                Stack
+              </span>
+
+              <div class="project-stack">
+
+                @for (
+                  technology of project.technologies;
+                  track technology
+                ) {
+
+                  <div
+                    class="project-stack__item"
+                    [attr.title]="technology"
+                  >
+
+                    <i
+                      [class]="
+                        getTechnologyIcon(technology)
+                        + ' project-stack__icon'
+                      "
+                    ></i>
+
+                    <span>
+                      {{ technology }}
+                    </span>
+
+                  </div>
+
+                }
+
+              </div>
+
+            </div>
+
+          </div>
+
 
           <div class="featured-project__actions">
 
             @if (project.demoUrl) {
+
               <a
                 [href]="project.demoUrl"
-                class="project-button project-button--primary"
+                class="
+                  project-button
+                  project-button--primary
+                "
                 target="_blank"
                 rel="noopener"
-                i18n
               >
-                Ver proyecto
+                <span>↗</span>
+
+                <span i18n>
+                  Ver proyecto
+                </span>
               </a>
+
             }
 
+
             @if (project.githubUrl) {
+
               <a
                 [href]="project.githubUrl"
-                class="project-button project-button--secondary"
+                class="
+                  project-button
+                  project-button--secondary
+                "
                 target="_blank"
                 rel="noopener"
-                i18n
               >
-                Repositorio
+
+                <i
+                  class="
+                    devicon-github-original
+                    repository-icon
+                  "
+                ></i>
+
+                <span i18n>
+                  Repositorio
+                </span>
+
               </a>
+
             }
 
           </div>
 
         </div>
 
+
+        <div class="featured-project__image">
+
+          @if (project.image) {
+
+            <img
+              [src]="project.image"
+              [alt]="project.title"
+            >
+
+          } @else {
+
+            <div class="image-placeholder">
+
+              <span>
+                {{ project.title }}
+              </span>
+
+              <small i18n>
+                Imagen del proyecto
+              </small>
+
+            </div>
+
+          }
+
+        </div>
+
       </article>
+
     }
+
 
     <div class="projects__grid">
 
@@ -110,7 +256,11 @@
         <article class="project-card">
 
           <span class="project-card__number">
-            {{ project.order.toString().padStart(2, '0') }}
+            {{
+              project.order
+                .toString()
+                .padStart(2, '0')
+            }}
           </span>
 
           <h3>
@@ -127,9 +277,25 @@
               technology of project.technologies;
               track technology
             ) {
-              <span>
-                {{ technology }}
-              </span>
+
+              <div
+                class="project-card__technology"
+                [attr.title]="technology"
+              >
+
+                <i
+                  [class]="
+                    getTechnologyIcon(technology)
+                    + ' project-card__icon'
+                  "
+                ></i>
+
+                <span>
+                  {{ technology }}
+                </span>
+
+              </div>
+
             }
 
           </div>

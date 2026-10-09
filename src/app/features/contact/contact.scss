@@ -18,7 +18,7 @@
 
   margin-bottom: 1rem;
 
-  color: #7c6cff;
+  color: var(--accent);
 
   font-size: 0.85rem;
   font-weight: 700;
@@ -32,10 +32,12 @@
   font-size: clamp(2.4rem, 5vw, 4.2rem);
   line-height: 1.05;
   letter-spacing: -0.04em;
+
+  color: var(--text-primary);
 }
 
 .contact-info h2 span {
-  color: #7c6cff;
+  color: var(--accent);
 }
 
 .description {
@@ -43,7 +45,7 @@
 
   margin-top: 1.5rem;
 
-  color: #8c8c9a;
+  color: var(--text-secondary);
 
   font-size: 1.05rem;
   line-height: 1.8;
@@ -70,13 +72,19 @@
   display: grid;
   place-items: center;
 
-  border: 1px solid rgba(124, 108, 255, 0.25);
+  border: 1px solid var(--border-color);
   border-radius: 14px;
 
-  background: rgba(124, 108, 255, 0.08);
+  background: var(--surface-light);
 
-  color: #7c6cff;
+  color: var(--accent);
+
   font-weight: 700;
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .detail span {
@@ -84,12 +92,14 @@
 
   margin-bottom: 0.25rem;
 
-  color: #8c8c9a;
+  color: var(--text-secondary);
 
   font-size: 0.8rem;
 }
 
 .detail strong {
+  color: var(--text-primary);
+
   font-size: 0.95rem;
   font-weight: 600;
 }
@@ -97,18 +107,17 @@
 .contact-card {
   padding: 2rem;
 
-  border: 1px solid rgba(140, 140, 160, 0.15);
+  border: 1px solid var(--border-color);
   border-radius: 24px;
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(124, 108, 255, 0.07),
-      rgba(255, 255, 255, 0.02)
-    );
+  background: var(--bg-card);
 
-  box-shadow:
-    0 25px 80px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow);
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 form {
@@ -130,12 +139,15 @@ form {
 }
 
 label {
+  color: var(--text-primary);
+
   font-size: 0.85rem;
   font-weight: 600;
 }
 
 label span {
-  color: #8c8c9a;
+  color: var(--text-secondary);
+
   font-weight: 400;
 }
 
@@ -145,14 +157,14 @@ textarea {
 
   box-sizing: border-box;
 
-  border: 1px solid rgba(140, 140, 160, 0.2);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
 
   padding: 0.95rem 1rem;
 
-  background: rgba(128, 128, 128, 0.05);
+  background: var(--surface-light);
 
-  color: inherit;
+  color: var(--text-primary);
 
   font: inherit;
 
@@ -161,7 +173,8 @@ textarea {
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease,
-    background 0.2s ease;
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 textarea {
@@ -171,17 +184,18 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-  color: #888894;
+  color: var(--text-secondary);
+  opacity: 0.7;
 }
 
 input:focus,
 textarea:focus {
-  border-color: #7c6cff;
+  border-color: var(--accent);
 
   box-shadow:
-    0 0 0 3px rgba(124, 108, 255, 0.12);
+    0 0 0 3px rgba(0, 217, 255, 0.12);
 
-  background: rgba(124, 108, 255, 0.03);
+  background: var(--bg-card);
 }
 
 .submit-button {
@@ -200,11 +214,11 @@ textarea:focus {
   background:
     linear-gradient(
       135deg,
-      #6c5cff,
-      #8c7cff
+      var(--accent),
+      var(--accent-secondary)
     );
 
-  color: #fff;
+  color: #ffffff;
 
   font: inherit;
   font-weight: 700;
@@ -221,7 +235,7 @@ textarea:focus {
   transform: translateY(-2px);
 
   box-shadow:
-    0 12px 35px rgba(124, 108, 255, 0.3);
+    0 12px 35px rgba(0, 217, 255, 0.25);
 }
 
 .submit-button:disabled {
@@ -231,6 +245,7 @@ textarea:focus {
 
 .error {
   color: #ef5350;
+
   font-size: 0.76rem;
 }
 

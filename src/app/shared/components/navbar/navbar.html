@@ -55,6 +55,24 @@
         {{ oppositeLanguage().toUpperCase() }}
       </button>
 
+      <button
+        class="theme-button"
+        type="button"
+        (click)="toggleTheme()"
+        [attr.aria-label]="
+          theme() === 'dark'
+            ? 'Cambiar a tema claro'
+            : 'Cambiar a tema oscuro'
+        "
+      >
+      
+      @if (theme() === 'dark') {
+        ☀
+      } @else {
+        ☾
+      }
+    </button>
+
       <a
         href="#contacto"
         class="contact-button"

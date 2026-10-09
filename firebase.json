@@ -16,5 +16,21 @@
         "npm --prefix \"$RESOURCE_DIR\" run build"
       ]
     }
-  ]
+  ],
+
+  "hosting": {
+    "public": "dist/portfolio-jose/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/es/",
+        "type": 302
+      }
+    ]
+  }
 }

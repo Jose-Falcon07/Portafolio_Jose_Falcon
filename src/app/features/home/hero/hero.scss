@@ -52,6 +52,8 @@
 
   margin-bottom: 22px;
 
+  color: var(--text-primary);
+
   span {
     display: block;
 
@@ -61,7 +63,7 @@
       linear-gradient(
         90deg,
         var(--primary),
-        #4a8fff
+        var(--blue)
       );
 
     background-clip: text;
@@ -78,7 +80,7 @@
     2rem
   );
 
-  color: #d8e5f4;
+  color: var(--text-primary);
 
   font-weight: 600;
 }
@@ -118,7 +120,8 @@
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease,
-    border-color 0.25s ease;
+    border-color 0.25s ease,
+    background-color 0.25s ease;
 }
 
 .button--primary {
@@ -143,12 +146,11 @@
 .button--secondary {
   border:
     1px solid
-    rgba(255, 255, 255, 0.18);
+    var(--border-color);
 
   color: var(--text-primary);
 
-  background:
-    rgba(255, 255, 255, 0.03);
+  background: var(--bg-card);
 
   &:hover {
     transform: translateY(-3px);
@@ -169,14 +171,13 @@
 
     border:
       1px solid
-      rgba(0, 217, 255, 0.15);
+      var(--border-color);
 
     border-radius: 999px;
 
     color: var(--text-secondary);
 
-    background:
-      rgba(0, 217, 255, 0.04);
+    background: var(--bg-card);
 
     font-size: 0.8rem;
   }
@@ -196,27 +197,28 @@
 
   border:
     1px solid
-    rgba(0, 217, 255, 0.25);
+    var(--border-color);
 
   border-radius: 18px;
 
   overflow: hidden;
 
-  background:
-    rgba(5, 27, 48, 0.72);
+  background: var(--bg-card);
 
   backdrop-filter: blur(20px);
 
   box-shadow:
-    0 30px 80px
-    rgba(0, 0, 0, 0.38),
-    0 0 60px
-    rgba(0, 217, 255, 0.06);
+    var(--shadow);
 
   transform:
     perspective(1000px)
     rotateY(-5deg)
     rotateX(2deg);
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .code-card__header {
@@ -229,7 +231,7 @@
 
   border-bottom:
     1px solid
-    rgba(255, 255, 255, 0.07);
+    var(--border-color);
 
   position: relative;
 }
@@ -269,7 +271,7 @@
   transform:
     translateX(-50%);
 
-  color: #748ca7;
+  color: var(--text-secondary);
 
   font-size: 0.75rem;
 }
@@ -286,7 +288,7 @@
 
   line-height: 1.9;
 
-  color: #b8c9dc;
+  color: var(--text-secondary);
 
   p {
     white-space: nowrap;
@@ -310,7 +312,7 @@
 }
 
 .green {
-  color: #c3e88d;
+  color: #66a84a;
 }
 
 .code-card__footer {
@@ -325,9 +327,9 @@
 
   border-top:
     1px solid
-    rgba(255, 255, 255, 0.07);
+    var(--border-color);
 
-  color: #698097;
+  color: var(--text-secondary);
 
   font-size: 0.75rem;
 }
@@ -377,7 +379,6 @@
 }
 
 @media (max-width: 950px) {
-
   .hero {
     padding-top: 120px;
   }
@@ -410,7 +411,6 @@
 }
 
 @media (max-width: 600px) {
-
   .hero {
     padding-top: 110px;
   }
