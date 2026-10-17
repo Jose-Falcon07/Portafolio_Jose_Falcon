@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="4568881425827283863" datatype="html">
+        <source> Sobre mí </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/navbar/navbar.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5243589254559902105" datatype="html">
+        <source> Transformo ideas en soluciones digitales </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="34311176033340907" datatype="html">
+        <source> Soy Jose Falcon, desarrollador de software Jr. enfocado en crear aplicaciones modernas, funcionales y escalables. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4112286749764095396" datatype="html">
+        <source> Trabajo con tecnologías frontend, backend, bases de datos y servicios en la nube, buscando siempre aprender nuevas herramientas y mejorar la calidad de cada proyecto. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5790118829328865113" datatype="html">
+        <source> Me gusta convertir problemas reales en soluciones tecnológicas simples, eficientes y fáciles de utilizar. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="189719884910562145" datatype="html">
+        <source> Lenguajes de programación </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="764211476930840533" datatype="html">
+        <source> Bases de datos </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1175073120118014606" datatype="html">
+        <source> Plataformas cloud </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.html</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7064037261478945127" datatype="html">
+        <source> Contacto </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/navbar/navbar.html</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3755790718690090448" datatype="html">
+        <source> ¿Tienes un proyecto <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>en mente?<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">14,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4327711741174294070" datatype="html">
+        <source> Estoy abierto a nuevas oportunidades, colaboraciones y proyectos. Si tienes una idea o simplemente quieres conversar, puedes escribirme. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9144921677462318788" datatype="html">
+        <source> Correo </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4392381014419463531" datatype="html">
+        <source> Desarrollo </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7405576835713156884" datatype="html">
+        <source> Software · Web · Backend </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3005844585526180659" datatype="html">
+        <source> Ubicación </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8294859789022685381" datatype="html">
+        <source> Nombre </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1946313421164554768" datatype="html">
+        <source>Tu nombre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">151,152</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6712581451165724694" datatype="html">
+        <source> Ingresa tu nombre. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">163</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="586194781529791821" datatype="html">
+        <source>correo@ejemplo.com</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">180,181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6229202357224667256" datatype="html">
+        <source> Ingresa un correo válido. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">192</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2705536790017641085" datatype="html">
+        <source> Asunto </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">206</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5387919346927473467" datatype="html">
+        <source>¿En qué puedo ayudarte?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">213,214</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1516782247631132221" datatype="html">
+        <source> Ingresa un asunto. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">225</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3033639121334407453" datatype="html">
+        <source> Teléfono </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">237</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2846926083955871933" datatype="html">
+        <source> (opcional) </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">241</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4420003834355151348" datatype="html">
+        <source> Mensaje </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">261</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8651787575849317970" datatype="html">
+        <source>Cuéntame sobre tu proyecto...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">268,269</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7843311893133674832" datatype="html">
+        <source> El mensaje debe tener al menos 10 caracteres. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">280</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3221559771053595511" datatype="html">
+        <source> Enviando... </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">296</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2914647481504230060" datatype="html">
+        <source> Enviar mensaje </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.html</context>
+          <context context-type="linenumber">302</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3839418929735297411" datatype="html">
+        <source>Experiencia</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/experience/experience.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3414281969911446919" datatype="html">
+        <source> Mi experiencia <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>profesional<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/experience/experience.html</context>
+          <context context-type="linenumber">7,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4049819036182124434" datatype="html">
+        <source> Actualmente me encuentro desarrollando mi perfil profesional en el área de desarrollo de software, trabajando con tecnologías web, backend, bases de datos, Linux y servicios en la nube. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/experience/experience.html</context>
+          <context context-type="linenumber">12,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="60267856021530036" datatype="html">
+        <source>Desarrollador de Software Jr.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/experience/experience.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="194463253478275970" datatype="html">
+        <source> Desarrollo y proyectos tecnológicos </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/experience/experience.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4706687981368763398" datatype="html">
+        <source>Actualidad</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/experience/experience.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1925042656559957169" datatype="html">
+        <source> Desarrollo de aplicaciones y proyectos utilizando tecnologías como Angular, Java, Python, bases de datos relacionales y herramientas cloud. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/experience/experience.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1742605021074402975" datatype="html">
+        <source>Desarrollo de Software</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/experience/experience.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7960018787209181925" datatype="html">
+        <source>En curso</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/experience/experience.html</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6749001659895756531" datatype="html">
+        <source> Creación de aplicaciones, APIs, sistemas con bases de datos, proyectos de machine learning y desarrollo de soluciones web orientadas a resolver problemas reales. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/experience/experience.html</context>
+          <context context-type="linenumber">62,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8667445174638252332" datatype="html">
+        <source> Hola, soy </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/hero/hero.html</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2103171363968735608" datatype="html">
+        <source> Desarrollador de Software Jr. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/hero/hero.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5649223530946061372" datatype="html">
+        <source> Creo aplicaciones modernas, funcionales y escalables, combinando desarrollo frontend, backend, bases de datos y tecnologías cloud. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/hero/hero.html</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6767942781080746801" datatype="html">
+        <source> Ver proyectos </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/hero/hero.html</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="116749647487897847" datatype="html">
+        <source> Descargar CV </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/hero/hero.html</context>
+          <context context-type="linenumber">68,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="165601219854540197" datatype="html">
+        <source> Proyectos </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/navbar/navbar.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6232055499446909962" datatype="html">
+        <source> Algunos trabajos <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>destacados<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.html</context>
+          <context context-type="linenumber">17,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2253442870127696723" datatype="html">
+        <source> Proyectos académicos y personales donde aplico desarrollo frontend, backend, bases de datos y buenas prácticas de software. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7944402148822980048" datatype="html">
+        <source> Proyecto destacado </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7741474133604817022" datatype="html">
+        <source> — Aprende inglés volando </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2513980824715499680" datatype="html">
+        <source> Juego educativo de vocabulario donde el jugador pilota un avión y debe seleccionar la palabra correcta en inglés mientras supera diferentes desafíos. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.html</context>
+          <context context-type="linenumber">55,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6116916912959817963" datatype="html">
+        <source> Sistema de vidas </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5080731350533870377" datatype="html">
+        <source> Puntuación </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2734201060718518984" datatype="html">
+        <source> Vocabulario </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5362030266404636034" datatype="html">
+        <source> Mi rol </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2052747434030752806" datatype="html">
+        <source> Diseño y desarrollo </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7683702106854014967" datatype="html">
+        <source> Stack </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.html</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4448579428054216808" datatype="html">
+        <source> Ver proyecto </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.html</context>
+          <context context-type="linenumber">178</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7924530000476082576" datatype="html">
+        <source> Repositorio </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.html</context>
+          <context context-type="linenumber">205</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="313869930987064580" datatype="html">
+        <source> Imagen del proyecto </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.html</context>
+          <context context-type="linenumber">235</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="345004080536356870" datatype="html">
+        <source>
+        Juego educativo de vocabulario en inglés donde el jugador controla
+        un avión y debe seleccionar la palabra correcta mientras avanza
+        por distintos desafíos.
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.ts</context>
+          <context context-type="linenumber">17,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="201377227727215248" datatype="html">
+        <source>Proyecto en desarrollo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2868035496241721263" datatype="html">
+        <source>
+        Espacio reservado para uno de mis próximos proyectos.
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.ts</context>
+          <context context-type="linenumber">44,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6557813670000068542" datatype="html">
+        <source>
+        Nuevas aplicaciones y experimentos serán añadidos próximamente.
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.ts</context>
+          <context context-type="linenumber">65,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2639892409767047245" datatype="html">
+        <source> Habilidades </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/skills/skills.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/navbar/navbar.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2230611449850180203" datatype="html">
+        <source> Tecnologías que utilizo para construir soluciones </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/skills/skills.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5720037743194976414" datatype="html">
+        <source> Trabajo con herramientas de frontend, backend, bases de datos, control de versiones, sistemas Linux y servicios cloud. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/skills/skills.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7968466921088995934" datatype="html">
+        <source> Actualmente </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/skills/skills.html</context>
+          <context context-type="linenumber">62,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1335213143039687637" datatype="html">
+        <source> Aprendiendo y construyendo </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/skills/skills.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2364617990904535781" datatype="html">
+        <source> Continuamente mejorando mis conocimientos y trabajando en nuevos proyectos de desarrollo de software. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/skills/skills.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7597261930406149764" datatype="html">
+        <source> Inicio </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/navbar/navbar.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8525386714900407175" datatype="html">
+        <source> Experiencia </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/navbar/navbar.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7818596984345129386" datatype="html">
+        <source> Hagamos algo increíble </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/navbar/navbar.html</context>
+          <context context-type="linenumber">82,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7532309422431573018" datatype="html">
+        <source>Abrir menú</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/navbar/navbar.html</context>
+          <context context-type="linenumber">88,89</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

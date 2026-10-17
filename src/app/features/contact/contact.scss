@@ -120,6 +120,23 @@
     box-shadow 0.3s ease;
 }
 
+.instagram-link {
+  color: var(--text-primary);
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.instagram-link:hover {
+  color: var(--accent);
+}
+
 form {
   display: flex;
   flex-direction: column;

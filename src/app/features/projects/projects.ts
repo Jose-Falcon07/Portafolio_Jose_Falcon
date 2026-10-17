@@ -20,7 +20,7 @@ export class Projects {
         por distintos desafíos.
       `,
 
-      image: '/images/projects/skyword.png',
+      image: 'images/projects/skyword.png',
 
       technologies: [
         'Python',

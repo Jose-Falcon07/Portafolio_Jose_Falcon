@@ -2,14 +2,23 @@
   <div class="contact-container">
 
     <div class="contact-info">
-      <span class="section-label" i18n>Contacto</span>
+
+      <span
+        class="section-label"
+        i18n
+      >
+        Contacto
+      </span>
 
       <h2 i18n>
         ¿Tienes un proyecto
         <span>en mente?</span>
       </h2>
 
-      <p class="description" i18n>
+      <p
+        class="description"
+        i18n
+      >
         Estoy abierto a nuevas oportunidades, colaboraciones y proyectos.
         Si tienes una idea o simplemente quieres conversar, puedes escribirme.
       </p>
@@ -17,34 +26,107 @@
       <div class="contact-details">
 
         <div class="detail">
-          <div class="detail-icon">✉</div>
+
+          <div class="detail-icon">
+            ✉
+          </div>
 
           <div>
-            <span i18n>Correo</span>
-            <strong i18n>Contáctame directamente</strong>
+
+            <span i18n>
+              Correo
+            </span>
+
+            <strong>
+              joshepangel007@gmail.com
+            </strong>
+
           </div>
+
         </div>
 
         <div class="detail">
-          <div class="detail-icon">&lt;/&gt;</div>
+
+          <div class="detail-icon">
+            &lt;/&gt;
+          </div>
 
           <div>
-            <span i18n>Desarrollo</span>
-            <strong i18n>Software · Web · Backend</strong>
+
+            <span i18n>
+              Desarrollo
+            </span>
+
+            <strong i18n>
+              Software · Web · Backend
+            </strong>
+
           </div>
+
         </div>
 
         <div class="detail">
-          <div class="detail-icon">◎</div>
+
+          <div class="detail-icon">
+            ◎
+          </div>
 
           <div>
-            <span i18n>Ubicación</span>
-            <strong>Panamá</strong>
+
+            <span i18n>
+              Ubicación
+            </span>
+
+            <strong>
+              Panamá
+            </strong>
+
           </div>
+
         </div>
+
+        <a
+          href="https://www.instagram.com/jf_softwaredevelop/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="detail detail--link"
+          aria-label="Instagram de Jose Falcon"
+        >
+
+          <div class="detail-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              width="22"
+              height="22"
+              aria-hidden="true"
+            >
+              <path
+                fill="currentColor"
+                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm10.5 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
+              />
+            </svg>
+
+          </div>
+
+          <div>
+
+            <span>
+              Instagram
+            </span>
+
+            <strong class="instagram-link">
+              @jf_softwaredevelop
+            </strong>
+
+          </div>
+
+        </a>
 
       </div>
+
     </div>
+
 
     <div class="contact-card">
 
@@ -58,7 +140,9 @@
 
           <div class="form-group">
 
-            <label for="name" i18n>Nombre</label>
+            <label for="name" i18n>
+              Nombre
+            </label>
 
             <input
               id="name"
@@ -72,16 +156,22 @@
               contactForm.controls.name.touched &&
               contactForm.controls.name.invalid
             ) {
-              <small class="error" i18n>
+              <small
+                class="error"
+                i18n
+              >
                 Ingresa tu nombre.
               </small>
             }
 
           </div>
 
+
           <div class="form-group">
 
-            <label for="email" i18n>Correo</label>
+            <label for="email" i18n>
+              Correo
+            </label>
 
             <input
               id="email"
@@ -95,7 +185,10 @@
               contactForm.controls.email.touched &&
               contactForm.controls.email.invalid
             ) {
-              <small class="error" i18n>
+              <small
+                class="error"
+                i18n
+              >
                 Ingresa un correo válido.
               </small>
             }
@@ -104,11 +197,14 @@
 
         </div>
 
+
         <div class="form-row">
 
           <div class="form-group">
 
-            <label for="subject" i18n>Asunto</label>
+            <label for="subject" i18n>
+              Asunto
+            </label>
 
             <input
               id="subject"
@@ -122,18 +218,29 @@
               contactForm.controls.subject.touched &&
               contactForm.controls.subject.invalid
             ) {
-              <small class="error" i18n>
+              <small
+                class="error"
+                i18n
+              >
                 Ingresa un asunto.
               </small>
             }
 
           </div>
 
+
           <div class="form-group">
 
             <label for="phone">
-              <span i18n>Teléfono</span>
-              <span i18n>(opcional)</span>
+
+              <span i18n>
+                Teléfono
+              </span>
+
+              <span i18n>
+                (opcional)
+              </span>
+
             </label>
 
             <input
@@ -147,9 +254,12 @@
 
         </div>
 
+
         <div class="form-group">
 
-          <label for="message" i18n>Mensaje</label>
+          <label for="message" i18n>
+            Mensaje
+          </label>
 
           <textarea
             id="message"
@@ -163,36 +273,59 @@
             contactForm.controls.message.touched &&
             contactForm.controls.message.invalid
           ) {
-            <small class="error" i18n>
+            <small
+              class="error"
+              i18n
+            >
               El mensaje debe tener al menos 10 caracteres.
             </small>
           }
 
         </div>
 
+
         <button
           class="submit-button"
           type="submit"
           [disabled]="sending()"
         >
+
           @if (sending()) {
-            <span i18n>Enviando...</span>
+
+            <span i18n>
+              Enviando...
+            </span>
+
           } @else {
-            <span i18n>Enviar mensaje</span>
-            <span>→</span>
+
+            <span i18n>
+              Enviar mensaje
+            </span>
+
+            <span>
+              →
+            </span>
+
           }
+
         </button>
 
+
         @if (successMessage()) {
+
           <div class="form-message success">
             {{ successMessage() }}
           </div>
+
         }
 
+
         @if (errorMessage()) {
+
           <div class="form-message error-box">
             {{ errorMessage() }}
           </div>
+
         }
 
       </form>

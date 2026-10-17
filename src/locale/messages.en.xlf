@@ -644,6 +644,123 @@
           <context context-type="linenumber">31,32</context>
         </context-group>
       </trans-unit>
+
+      <trans-unit id="189719884910562145" datatype="html">
+        <source> Lenguajes de programación </source>
+        <target> Programming languages </target>
+      </trans-unit>
+      <trans-unit id="764211476930840533" datatype="html">
+        <source> Bases de datos </source>
+        <target> Databases </target>
+      </trans-unit>
+      <trans-unit id="1175073120118014606" datatype="html">
+        <source> Plataformas cloud </source>
+        <target> Cloud platforms </target>
+      </trans-unit>
+      <trans-unit id="7968466921088995934" datatype="html">
+        <source> Actualmente </source>
+        <target> Currently </target>
+      </trans-unit>
+      <trans-unit id="1335213143039687637" datatype="html">
+        <source> Aprendiendo y construyendo </source>
+        <target> Learning and building </target>
+      </trans-unit>
+      <trans-unit id="2364617990904535781" datatype="html">
+        <source> Continuamente mejorando mis conocimientos y trabajando en nuevos proyectos de desarrollo de software. </source>
+        <target> Continuously improving my knowledge and working on new software development projects. </target>
+      </trans-unit>
+      <trans-unit id="345004080536356870" datatype="html">
+        <source>
+        Juego educativo de vocabulario en inglés donde el jugador controla
+        un avión y debe seleccionar la palabra correcta mientras avanza
+        por distintos desafíos.
+      </source>
+        <target>
+        Educational English vocabulary game where the player controls
+        an airplane and must select the correct word while progressing
+        through different challenges.
+      </target>
+      </trans-unit>
+      <trans-unit id="7741474133604817022" datatype="html">
+        <source> — Aprende inglés volando </source>
+        <target> — Learn English while flying </target>
+      </trans-unit>
+      <trans-unit id="2513980824715499680" datatype="html">
+        <source> Juego educativo de vocabulario donde el jugador pilota un avión y debe seleccionar la palabra correcta en inglés mientras supera diferentes desafíos. </source>
+        <target> Educational vocabulary game where the player pilots an airplane and must select the correct English word while overcoming different challenges. </target>
+      </trans-unit>
+      <trans-unit id="6116916912959817963" datatype="html">
+        <source> Sistema de vidas </source>
+        <target> Life system </target>
+      </trans-unit>
+      <trans-unit id="5080731350533870377" datatype="html">
+        <source> Puntuación </source>
+        <target> Score </target>
+      </trans-unit>
+      <trans-unit id="2734201060718518984" datatype="html">
+        <source> Vocabulario </source>
+        <target> Vocabulary </target>
+      </trans-unit>
+      <trans-unit id="5362030266404636034" datatype="html">
+        <source> Mi rol </source>
+        <target> My role </target>
+      </trans-unit>
+      <trans-unit id="2052747434030752806" datatype="html">
+        <source> Diseño y desarrollo </source>
+        <target> Design and development </target>
+      </trans-unit>
+      <trans-unit id="7683702106854014967" datatype="html">
+        <source> Stack </source>
+        <target> Stack </target>
+      </trans-unit>
+      <trans-unit id="313869930987064580" datatype="html">
+        <source> Imagen del proyecto </source>
+        <target> Project image </target>
+      </trans-unit>
+      <trans-unit id="9144921677462318788" datatype="html">
+        <source> Correo </source>
+        <target> Email </target>
+      </trans-unit>
+      <trans-unit id="4392381014419463531" datatype="html">
+        <source> Desarrollo </source>
+        <target> Development </target>
+      </trans-unit>
+      <trans-unit id="7405576835713156884" datatype="html">
+        <source> Software · Web · Backend </source>
+        <target> Software · Web · Backend </target>
+      </trans-unit>
+      <trans-unit id="3005844585526180659" datatype="html">
+        <source> Ubicación </source>
+        <target> Location </target>
+      </trans-unit>
+      <trans-unit id="8294859789022685381" datatype="html">
+        <source> Nombre </source>
+        <target> Name </target>
+      </trans-unit>
+      <trans-unit id="2705536790017641085" datatype="html">
+        <source> Asunto </source>
+        <target> Subject </target>
+      </trans-unit>
+      <trans-unit id="3033639121334407453" datatype="html">
+        <source> Teléfono </source>
+        <target> Phone </target>
+      </trans-unit>
+      <trans-unit id="2846926083955871933" datatype="html">
+        <source> (opcional) </source>
+        <target> (optional) </target>
+      </trans-unit>
+      <trans-unit id="4420003834355151348" datatype="html">
+        <source> Mensaje </source>
+        <target> Message </target>
+      </trans-unit>
+      <trans-unit id="3221559771053595511" datatype="html">
+        <source> Enviando... </source>
+        <target> Sending... </target>
+      </trans-unit>
+      <trans-unit id="2914647481504230060" datatype="html">
+        <source> Enviar mensaje </source>
+        <target> Send message </target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

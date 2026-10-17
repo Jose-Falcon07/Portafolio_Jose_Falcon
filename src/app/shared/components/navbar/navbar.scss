@@ -61,17 +61,11 @@
 .navbar__logo {
   display: flex;
   align-items: center;
-  gap: 4px;
 
-  font-size: 1.35rem;
-  font-weight: 800;
-
-  color: var(--text-primary);
-
-  letter-spacing: 1px;
-
-  span {
-    color: var(--accent);
+  img {
+    width: auto;
+    height: 64px;
+    display: block;
   }
 }
 
