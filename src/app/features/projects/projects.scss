@@ -42,11 +42,6 @@
   line-height: 1.8;
 }
 
-
-/* =========================================================
-   PROYECTO DESTACADO
-   ========================================================= */
-
 .featured-project {
   display: grid;
 
@@ -78,11 +73,6 @@
 .featured-project:hover {
   border-color: var(--accent);
 }
-
-
-/* =========================================================
-   CONTENIDO PROYECTO DESTACADO
-   ========================================================= */
 
 .featured-project__content {
   display: flex;
@@ -128,11 +118,6 @@
 
   line-height: 1.85;
 }
-
-
-/* =========================================================
-   CARACTERÍSTICAS
-   ========================================================= */
 
 .project-features {
   display: flex;
@@ -181,11 +166,6 @@
   font-size: 1rem;
 }
 
-
-/* =========================================================
-   DIVISOR
-   ========================================================= */
-
 .project-divider {
   height: 1px;
 
@@ -196,11 +176,6 @@
 
   background: var(--border-color);
 }
-
-
-/* =========================================================
-   META INFORMACIÓN
-   ========================================================= */
 
 .project-meta {
   display: grid;
@@ -232,11 +207,6 @@
 
   font-size: 0.9rem;
 }
-
-
-/* =========================================================
-   STACK DEL PROYECTO
-   ========================================================= */
 
 .project-stack {
   display: flex;
@@ -280,11 +250,6 @@
   font-size: 1.25rem;
 }
 
-
-/* =========================================================
-   BOTONES
-   ========================================================= */
-
 .featured-project__actions {
   display: flex;
   flex-wrap: wrap;
@@ -315,6 +280,32 @@
     border-color 0.25s ease,
     box-shadow 0.25s ease,
     background-color 0.3s ease;
+}
+
+.project-card__image {
+  margin: 1rem 0 1.25rem;
+
+  padding: 1rem;
+
+  border:
+    1px solid
+    var(--border-color);
+
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+}
+
+.project-card__image img {
+  width: 100%;
+
+  height: 180px;
+
+  display: block;
+
+  object-fit: contain;
 }
 
 .project-button--primary {
@@ -353,11 +344,6 @@
 .repository-icon {
   font-size: 1.3rem;
 }
-
-
-/* =========================================================
-   IMAGEN SKYWORD
-   ========================================================= */
 
 .featured-project__image {
   display: flex;
@@ -419,11 +405,6 @@
     color: var(--text-secondary);
   }
 }
-
-
-/* =========================================================
-   OTROS PROYECTOS
-   ========================================================= */
 
 .projects__grid {
   display: grid;
@@ -495,11 +476,6 @@
   font-weight: 800;
 }
 
-
-/* =========================================================
-   TECNOLOGÍAS OTROS PROYECTOS
-   ========================================================= */
-
 .project-card__tags {
   display: flex;
   flex-wrap: wrap;
@@ -541,11 +517,6 @@
   font-size: 1rem;
 }
 
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
 @media (max-width: 1000px) {
 
   .featured-project {
@@ -564,7 +535,6 @@
 
 }
 
-
 @media (max-width: 700px) {
 
   .projects__grid {
@@ -576,7 +546,6 @@
   }
 
 }
-
 
 @media (max-width: 600px) {
 

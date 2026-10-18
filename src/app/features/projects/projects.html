@@ -44,17 +44,11 @@
             <span class="project-name">
               {{ project.title }}
             </span>
-
-            <span i18n>
-              — Aprende inglés volando
-            </span>
           </h3>
 
 
-          <p i18n>
-            Juego educativo de vocabulario donde el jugador pilota un avión
-            y debe seleccionar la palabra correcta en inglés mientras supera
-            diferentes desafíos.
+          <p>
+            {{ project.description }}
           </p>
 
 
@@ -62,33 +56,33 @@
 
             <div class="feature-pill">
               <span class="feature-icon">
-                ♡
-              </span>
-
-              <span i18n>
-                Sistema de vidas
-              </span>
-            </div>
-
-
-            <div class="feature-pill">
-              <span class="feature-icon">
-                ★
-              </span>
-
-              <span i18n>
-                Puntuación
-              </span>
-            </div>
-
-
-            <div class="feature-pill">
-              <span class="feature-icon">
                 ◫
               </span>
 
               <span i18n>
-                Vocabulario
+                Gestión de archivos
+              </span>
+            </div>
+
+
+            <div class="feature-pill">
+              <span class="feature-icon">
+                ♙
+              </span>
+
+              <span i18n>
+                Usuarios y roles
+              </span>
+            </div>
+
+
+            <div class="feature-pill">
+              <span class="feature-icon">
+                ⌘
+              </span>
+
+              <span i18n>
+                Base de datos
               </span>
             </div>
 
@@ -170,13 +164,17 @@
                   project-button--primary
                 "
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
-                <span>↗</span>
+
+                <span>
+                  ↗
+                </span>
 
                 <span i18n>
                   Ver proyecto
                 </span>
+
               </a>
 
             }
@@ -191,7 +189,7 @@
                   project-button--secondary
                 "
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
 
                 <i
@@ -263,13 +261,30 @@
             }}
           </span>
 
+
           <h3>
             {{ project.title }}
           </h3>
 
+
+          @if (project.image) {
+
+            <div class="project-card__image">
+
+              <img
+                [src]="project.image"
+                [alt]="project.title"
+              >
+
+            </div>
+
+          }
+
+
           <p>
             {{ project.description }}
           </p>
+
 
           <div class="project-card__tags">
 
@@ -299,6 +314,70 @@
             }
 
           </div>
+
+
+          @if (
+            project.demoUrl ||
+            project.githubUrl
+          ) {
+
+            <div class="project-card__actions">
+
+              @if (project.demoUrl) {
+
+                <a
+                  [href]="project.demoUrl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="
+                    project-button
+                    project-button--primary
+                  "
+                >
+
+                  <span>
+                    ↗
+                  </span>
+
+                  <span i18n>
+                    Ver proyecto
+                  </span>
+
+                </a>
+
+              }
+
+
+              @if (project.githubUrl) {
+
+                <a
+                  [href]="project.githubUrl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="
+                    project-button
+                    project-button--secondary
+                  "
+                >
+
+                  <i
+                    class="
+                      devicon-github-original
+                      repository-icon
+                    "
+                  ></i>
+
+                  <span i18n>
+                    Repositorio
+                  </span>
+
+                </a>
+
+              }
+
+            </div>
+
+          }
 
         </article>
 

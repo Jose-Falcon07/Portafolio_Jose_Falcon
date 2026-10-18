@@ -1,0 +1,117 @@
+[debug] [2026-10-18T00:06:30.552Z] ----------------------------------------------------------------------
+[debug] [2026-10-18T00:06:30.553Z] Command:       /usr/bin/node /usr/bin/firebase deploy --only hosting
+[debug] [2026-10-18T00:06:30.553Z] CLI Version:   15.34.0
+[debug] [2026-10-18T00:06:30.554Z] Platform:      linux
+[debug] [2026-10-18T00:06:30.554Z] Node Version:  v24.21.0
+[debug] [2026-10-18T00:06:30.554Z] Detected Agent: unknown
+[debug] [2026-10-18T00:06:30.554Z] Time:          Sat Oct 17 2026 19:06:30 GMT-0500 (hora estándar oriental)
+[debug] [2026-10-18T00:06:30.554Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-10-18T00:06:31.107Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-10-18T00:06:31.107Z] > authorizing via signed-in user (joshepangel007@gmail.com)
+[debug] [2026-10-18T00:06:31.107Z] [iam] checking project portfolio-jose-falcon for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-10-18T00:06:31.115Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:31.115Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:31.116Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-jose-falcon:testIamPermissions [none]
+[debug] [2026-10-18T00:06:31.116Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-jose-falcon:testIamPermissions  x-goog-user-project=portfolio-jose-falcon
+[debug] [2026-10-18T00:06:31.116Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-jose-falcon:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-10-18T00:06:31.813Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-jose-falcon:testIamPermissions 200
+[debug] [2026-10-18T00:06:31.814Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-jose-falcon:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-10-18T00:06:31.814Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:31.814Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:31.814Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-jose-falcon [none]
+[debug] [2026-10-18T00:06:32.283Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-jose-falcon 200
+[debug] [2026-10-18T00:06:32.283Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-jose-falcon {"projectId":"portfolio-jose-falcon","projectNumber":"282808481341","displayName":"portfolio-jose-falcon","name":"projects/portfolio-jose-falcon","resources":{"hostingSite":"portfolio-jose-falcon"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_208902cb-10d8-4007-ac95-bd6034f210b2"}
+[info] 
+[info] === Deploying to 'portfolio-jose-falcon'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-10-18T00:06:32.284Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:32.284Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:32.285Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-jose-falcon/sites/portfolio-jose-falcon [none]
+[debug] [2026-10-18T00:06:33.241Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-jose-falcon/sites/portfolio-jose-falcon 200
+[debug] [2026-10-18T00:06:33.241Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-jose-falcon/sites/portfolio-jose-falcon {"name":"projects/portfolio-jose-falcon/sites/portfolio-jose-falcon","defaultUrl":"https://portfolio-jose-falcon.web.app","type":"DEFAULT_SITE"}
+[debug] [2026-10-18T00:06:33.242Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:33.242Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:33.242Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-jose-falcon/sites/portfolio-jose-falcon/versions [none]
+[debug] [2026-10-18T00:06:33.242Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-jose-falcon/sites/portfolio-jose-falcon/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-10-18T00:06:33.853Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-jose-falcon/sites/portfolio-jose-falcon/versions 200
+[debug] [2026-10-18T00:06:33.853Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-jose-falcon/sites/portfolio-jose-falcon/versions {"name":"projects/portfolio-jose-falcon/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[portfolio-jose-falcon]: beginning deploy... 
+[info] i  hosting[portfolio-jose-falcon]: found 40 files in dist/portfolio-jose/browser 
+[debug] [2026-10-18T00:06:33.864Z] [hosting] uploading with 200 concurrency
+[debug] [2026-10-18T00:06:34.838Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:34.838Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:34.839Z] [hosting] hash cache [ZGlzdC9wb3J0Zm9saW8tam9zZS9icm93c2Vy] stored for 40 files
+[debug] [2026-10-18T00:06:34.839Z] [hosting][hash queue][FINAL] {"max":971,"min":1,"avg":98.55,"active":0,"complete":40,"success":40,"errored":0,"retried":0,"total":40,"elapsed":973}
+[debug] [2026-10-18T00:06:34.839Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-jose-falcon/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48:populateFiles [none]
+[debug] [2026-10-18T00:06:34.839Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-jose-falcon/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48:populateFiles {"files":{"/es/logo.png":"f54fbcaad25f91e4d92c6bd451e5bb51c3085dc9022bc32dc5cdf4999654f28d","/es/favicon.ico":"2ccfb0a1407a2b1561918a66656e80bf3e0eacaa688e8d543fc3ac8af830ad90","/es/videos/development-tech.mp4":"a4f572b941ecd16a2ca3a2fb5b6237ba6370b5b5e3838050b6caa8ab3b49f433","/es/videos/1992-153555258.mp4":"e7e9b4bea5901d8c5b5a306e158cf83eee42960bfcf48b943d435e06af0ff5f8","/es/images/projects/skyword.png":"3c83a291a58cb6c80aebc982bbd9e4b15e26a50cb760cb9699d97d70a47a8a69","/es/images/projects/carta-blanca.png":"d53ceed9de7e9aafd7c7c7b629ff0aba718e388ce4b2eed64619336b7bb2116a","/es/cv/Jose-Falcon-CV.pdf":"2cf0a0bd0f737ad5bf2e1f2dd53c626f822ca874410327e47e13ec4b0d3b0704","/es/certifications/sql-server-master.pdf":"15cfcdab63f2b56e73cb04b0e81a9699c61db966613457b8e2ccd02c155d51d0","/es/certifications/oracle-database-foundations.pdf":"4ea63c0852a1e4005029733e8a7e5dd22595e30d47427d29f2ad05ef62e3ea5d","/es/certifications/linux-unhatched.pdf":"9550175eded0fe57de3866b95cfb30806f79e6c800fa65f50004f9fd84c31344","/es/certifications/introduction-to-cybersecurity.pdf":"32e35f74882cb71020c7952a2b4b4c6dde470bc837acc32041e2d736c291a840","/en/logo.png":"f54fbcaad25f91e4d92c6bd451e5bb51c3085dc9022bc32dc5cdf4999654f28d","/en/favicon.ico":"2ccfb0a1407a2b1561918a66656e80bf3e0eacaa688e8d543fc3ac8af830ad90","/en/videos/development-tech.mp4":"a4f572b941ecd16a2ca3a2fb5b6237ba6370b5b5e3838050b6caa8ab3b49f433","/en/videos/1992-153555258.mp4":"e7e9b4bea5901d8c5b5a306e158cf83eee42960bfcf48b943d435e06af0ff5f8","/en/images/projects/skyword.png":"3c83a291a58cb6c80aebc982bbd9e4b15e26a50cb760cb9699d97d70a47a8a69","/en/images/projects/carta-blanca.png":"d53ceed9de7e9aafd7c7c7b629ff0aba718e388ce4b2eed64619336b7bb2116a","/en/cv/Jose-Falcon-CV.pdf":"2cf0a0bd0f737ad5bf2e1f2dd53c626f822ca874410327e47e13ec4b0d3b0704","/en/certifications/sql-server-master.pdf":"15cfcdab63f2b56e73cb04b0e81a9699c61db966613457b8e2ccd02c155d51d0","/en/certifications/oracle-database-foundations.pdf":"4ea63c0852a1e4005029733e8a7e5dd22595e30d47427d29f2ad05ef62e3ea5d","/en/certifications/linux-unhatched.pdf":"9550175eded0fe57de3866b95cfb30806f79e6c800fa65f50004f9fd84c31344","/en/certifications/introduction-to-cybersecurity.pdf":"32e35f74882cb71020c7952a2b4b4c6dde470bc837acc32041e2d736c291a840","/es/polyfills-GSWAR4PT.js":"73b9cac36db39c311cbeba6d291f50a24dab13834cd75c086bd78d5b604f1b7b","/es/index.csr.html":"97c4761382b11392933dabd4552da276562b6dbd8f570948d53b7ccd3e5acd6e","/en/polyfills-GSWAR4PT.js":"706040d83888ed1bfb19eca6463d0d71717ea60021d52b806e768b8db54e6b0a","/en/index.csr.html":"5a27a8c38dc628cbf14fa965f5dfb3696905148a75c0b5e66faa22108504c162","/es/index.html":"49e0abf523ebaa96110a1c193f6c52e53d418a12e3af6474bcaf2cf08a34c3ad","/en/index.html":"fd21a2d7a10692ec86cc93773560611edad654cc2e5eaa58a9c6fe27c609acf5","/en/styles-BQTLAYN5.css":"7e5c6416dab534785df9b20cb9010b2fbdbc5863d5bf9e8ab44e3bc20b649859","/es/styles-BQTLAYN5.css":"7e5c6416dab534785df9b20cb9010b2fbdbc5863d5bf9e8ab44e3bc20b649859","/es/main-E7WPK3WX.js":"fd0035ed198c9004fb42ffcf81c81246f973a0c2866e372935cce452e1327ec9","/en/main-E7WPK3WX.js":"0142f69b9a04186d3ebca43d2c1cbf4e48c27d34095f42f938df565b364e4793","/es/media/devicon-ANQBM2YL.ttf":"0b7fb7720985454a90824add9d5edb31d326bdf4284a8a47abb550213fd5428a","/en/media/devicon-34GDRGSV.eot":"cc1143694549682aab9a63d01559c77a40c05be69cc94770e2ccd65b7f2054ee","/es/media/devicon-34GDRGSV.eot":"cc1143694549682aab9a63d01559c77a40c05be69cc94770e2ccd65b7f2054ee","/es/media/devicon-42TQVNS6.woff":"403078a4f07f6689ec227ca66ee8402b09dedc16528c75a8962d286759f916d5","/en/media/devicon-ANQBM2YL.ttf":"0b7fb7720985454a90824add9d5edb31d326bdf4284a8a47abb550213fd5428a","/en/media/devicon-42TQVNS6.woff":"403078a4f07f6689ec227ca66ee8402b09dedc16528c75a8962d286759f916d5","/es/media/devicon-ER6V6DXO.svg":"c621a2a417389b85a759cb3a7ca3d1e136c22cf544236f8c290228602fc75060","/en/media/devicon-ER6V6DXO.svg":"c621a2a417389b85a759cb3a7ca3d1e136c22cf544236f8c290228602fc75060"}}
+[debug] [2026-10-18T00:06:35.291Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-jose-falcon/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48:populateFiles 200
+[debug] [2026-10-18T00:06:35.292Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-jose-falcon/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48:populateFiles {"uploadRequiredHashes":["0142f69b9a04186d3ebca43d2c1cbf4e48c27d34095f42f938df565b364e4793","49e0abf523ebaa96110a1c193f6c52e53d418a12e3af6474bcaf2cf08a34c3ad","97c4761382b11392933dabd4552da276562b6dbd8f570948d53b7ccd3e5acd6e","5a27a8c38dc628cbf14fa965f5dfb3696905148a75c0b5e66faa22108504c162","fd0035ed198c9004fb42ffcf81c81246f973a0c2866e372935cce452e1327ec9","fd21a2d7a10692ec86cc93773560611edad654cc2e5eaa58a9c6fe27c609acf5"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files"}
+[debug] [2026-10-18T00:06:35.293Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:35.293Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:35.293Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:35.293Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:35.294Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:35.294Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:35.294Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:35.294Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:35.294Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:35.294Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:35.294Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:35.294Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:35.295Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/0142f69b9a04186d3ebca43d2c1cbf4e48c27d34095f42f938df565b364e4793 [none]
+[debug] [2026-10-18T00:06:35.295Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/0142f69b9a04186d3ebca43d2c1cbf4e48c27d34095f42f938df565b364e4793 [stream]
+[debug] [2026-10-18T00:06:35.296Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/49e0abf523ebaa96110a1c193f6c52e53d418a12e3af6474bcaf2cf08a34c3ad [none]
+[debug] [2026-10-18T00:06:35.297Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/49e0abf523ebaa96110a1c193f6c52e53d418a12e3af6474bcaf2cf08a34c3ad [stream]
+[debug] [2026-10-18T00:06:35.298Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/97c4761382b11392933dabd4552da276562b6dbd8f570948d53b7ccd3e5acd6e [none]
+[debug] [2026-10-18T00:06:35.298Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/97c4761382b11392933dabd4552da276562b6dbd8f570948d53b7ccd3e5acd6e [stream]
+[debug] [2026-10-18T00:06:35.298Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/5a27a8c38dc628cbf14fa965f5dfb3696905148a75c0b5e66faa22108504c162 [none]
+[debug] [2026-10-18T00:06:35.299Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/5a27a8c38dc628cbf14fa965f5dfb3696905148a75c0b5e66faa22108504c162 [stream]
+[debug] [2026-10-18T00:06:35.299Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/fd0035ed198c9004fb42ffcf81c81246f973a0c2866e372935cce452e1327ec9 [none]
+[debug] [2026-10-18T00:06:35.299Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/fd0035ed198c9004fb42ffcf81c81246f973a0c2866e372935cce452e1327ec9 [stream]
+[debug] [2026-10-18T00:06:35.300Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/fd21a2d7a10692ec86cc93773560611edad654cc2e5eaa58a9c6fe27c609acf5 [none]
+[debug] [2026-10-18T00:06:35.300Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/fd21a2d7a10692ec86cc93773560611edad654cc2e5eaa58a9c6fe27c609acf5 [stream]
+[debug] [2026-10-18T00:06:35.303Z] [hosting][populate queue][FINAL] {"max":456,"min":456,"avg":456,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":465}
+[debug] [2026-10-18T00:06:35.304Z] [hosting] uploads queued: 6
+[debug] [2026-10-18T00:06:36.289Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/49e0abf523ebaa96110a1c193f6c52e53d418a12e3af6474bcaf2cf08a34c3ad 200
+[debug] [2026-10-18T00:06:36.289Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/49e0abf523ebaa96110a1c193f6c52e53d418a12e3af6474bcaf2cf08a34c3ad [stream]
+[debug] [2026-10-18T00:06:36.369Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/fd21a2d7a10692ec86cc93773560611edad654cc2e5eaa58a9c6fe27c609acf5 200
+[debug] [2026-10-18T00:06:36.369Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/fd21a2d7a10692ec86cc93773560611edad654cc2e5eaa58a9c6fe27c609acf5 [stream]
+[debug] [2026-10-18T00:06:36.452Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/fd0035ed198c9004fb42ffcf81c81246f973a0c2866e372935cce452e1327ec9 200
+[debug] [2026-10-18T00:06:36.452Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/fd0035ed198c9004fb42ffcf81c81246f973a0c2866e372935cce452e1327ec9 [stream]
+[debug] [2026-10-18T00:06:36.512Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/0142f69b9a04186d3ebca43d2c1cbf4e48c27d34095f42f938df565b364e4793 200
+[debug] [2026-10-18T00:06:36.512Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/0142f69b9a04186d3ebca43d2c1cbf4e48c27d34095f42f938df565b364e4793 [stream]
+[debug] [2026-10-18T00:06:36.562Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/97c4761382b11392933dabd4552da276562b6dbd8f570948d53b7ccd3e5acd6e 200
+[debug] [2026-10-18T00:06:36.562Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/97c4761382b11392933dabd4552da276562b6dbd8f570948d53b7ccd3e5acd6e [stream]
+[debug] [2026-10-18T00:06:36.824Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/5a27a8c38dc628cbf14fa965f5dfb3696905148a75c0b5e66faa22108504c162 200
+[debug] [2026-10-18T00:06:36.824Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48/files/5a27a8c38dc628cbf14fa965f5dfb3696905148a75c0b5e66faa22108504c162 [stream]
+[debug] [2026-10-18T00:06:36.824Z] [hosting][upload queue][FINAL] {"max":1530,"min":996,"avg":1208,"active":0,"complete":6,"success":6,"errored":0,"retried":0,"total":6,"elapsed":1532}
+[info] ✔  hosting[portfolio-jose-falcon]: file upload complete 
+[debug] [2026-10-18T00:06:36.826Z] [hosting] deploy completed after 2971ms
+[debug] [2026-10-18T00:06:36.826Z] [
+  {
+    "config": {
+      "public": "dist/portfolio-jose/browser",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "redirects": [
+        {
+          "source": "/",
+          "destination": "/es/",
+          "type": 302
+        }
+      ],
+      "site": "portfolio-jose-falcon"
+    },
+    "version": "projects/portfolio-jose-falcon/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48"
+  }
+]
+[info] i  hosting[portfolio-jose-falcon]: finalizing version... 
+[debug] [2026-10-18T00:06:36.828Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:36.828Z] Checked if tokens are valid: true, expires at: 1792285126493
+[debug] [2026-10-18T00:06:36.828Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-jose-falcon/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48 updateMask=status%2Cconfig
+[debug] [2026-10-18T00:06:36.828Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-jose-falcon/sites/portfolio-jose-falcon/versions/aa71f7e5a4112d48 {"status":"FINALIZED","config":{"redirects":[{"glob":"/","location":"/es/","statusCode":302}]}}

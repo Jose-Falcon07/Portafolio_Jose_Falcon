@@ -1,5 +1,13 @@
-import { Component, computed, signal } from '@angular/core';
-import type { Project } from '../../core/models/project.model';
+import {
+  Component,
+  computed,
+  signal
+} from '@angular/core';
+
+import type {
+  Project
+} from '../../core/models/project.model';
+
 
 @Component({
   selector: 'app-projects',
@@ -8,19 +16,66 @@ import type { Project } from '../../core/models/project.model';
   styleUrl: './projects.scss'
 })
 export class Projects {
+
   projects = signal<Project[]>([
+
+    // ======================================================
+    // CARTA BLANCA
+    // Proyecto destacado
+    // ======================================================
+
+    {
+      id: 'carta-blanca',
+
+      title: 'Carta Blanca',
+
+      description: $localize`
+        Sistema de gestión de archivo físico desarrollado para organizar
+        racks, módulos, alturas, ubicaciones, cajas y carpetas, incorporando
+        autenticación, control de usuarios, roles y operaciones sobre la
+        estructura del archivo.
+      `,
+
+      image:
+        '/images/projects/carta-blanca.png',
+
+      technologies: [
+        'Ionic',
+        'Angular',
+        'TypeScript',
+        'Supabase',
+        'PostgreSQL'
+      ],
+
+      githubUrl:
+        'https://github.com/Jose-Falcon07/carta-blanca',
+
+      demoUrl: '',
+
+      featured: true,
+
+      order: 1
+    },
+
+
+    // ======================================================
+    // SKYWORD
+    // Concepto de proyecto
+    // ======================================================
+
     {
       id: 'skyword',
 
       title: 'SkyWord',
 
       description: $localize`
-        Juego educativo de vocabulario en inglés donde el jugador controla
-        un avión y debe seleccionar la palabra correcta mientras avanza
-        por distintos desafíos.
+        Concepto de un juego educativo de vocabulario en inglés donde
+        el jugador controla un avión y debe seleccionar la palabra
+        correcta mientras avanza por distintos desafíos.
       `,
 
-      image: 'images/projects/skyword.png',
+      image:
+        '/images/projects/skyword.png',
 
       technologies: [
         'Python',
@@ -28,29 +83,9 @@ export class Projects {
         'Figma'
       ],
 
-      githubUrl: '#',
-      demoUrl: '#',
+      githubUrl: '',
 
-      featured: true,
-
-      order: 1
-    },
-
-    {
-      id: 'project-2',
-
-      title: $localize`Proyecto en desarrollo`,
-
-      description: $localize`
-        Espacio reservado para uno de mis próximos proyectos.
-      `,
-
-      image: '',
-
-      technologies: [
-        'Angular',
-        'Java'
-      ],
+      demoUrl: '',
 
       featured: false,
 
@@ -60,66 +95,107 @@ export class Projects {
     {
       id: 'project-3',
 
-      title: $localize`Proyecto en desarrollo`,
+      title:
+        $localize`Proyecto en desarrollo`,
 
-      description: $localize`
-        Nuevas aplicaciones y experimentos serán añadidos próximamente.
-      `,
+      description:
+        $localize`
+          Nuevas aplicaciones y experimentos serán añadidos próximamente.
+        `,
 
       image: '',
 
       technologies: [
-        'Python',
-        'Firebase'
+        'Java',
+        'Angular'
       ],
+
+      githubUrl: '',
+
+      demoUrl: '',
 
       featured: false,
 
       order: 3
     }
+
   ]);
 
-  featuredProject = computed(() =>
-    this.projects().find(
-      project => project.featured
-    )
-  );
+  featuredProject =
+    computed(() =>
+      this.projects().find(
+        project =>
+          project.featured
+      )
+    );
 
-  otherProjects = computed(() =>
-    this.projects()
-      .filter(
-        project => !project.featured
-      )
-      .sort(
-        (a, b) =>
-          a.order - b.order
-      )
-  );
+  otherProjects =
+    computed(() =>
+      this.projects()
+        .filter(
+          project =>
+            !project.featured
+        )
+        .sort(
+          (a, b) =>
+            a.order - b.order
+        )
+    );
 
   getTechnologyIcon(
     technology: string
   ): string {
 
-    const icons: Record<string, string> = {
-      Python:
-        'devicon-python-plain colored',
+    const icons:
+      Record<string, string> = {
 
-      Pygame:
-        'devicon-python-plain colored',
+      // Ionic
+      Ionic:
+        'devicon-ionic-original colored',
 
-      Figma:
-        'devicon-figma-plain colored',
-
+      // Angular
       Angular:
         'devicon-angularjs-plain colored',
 
+      // TypeScript
+      TypeScript:
+        'devicon-typescript-plain colored',
+
+      // Supabase
+      Supabase:
+        'devicon-supabase-plain colored',
+
+      // PostgreSQL
+      PostgreSQL:
+        'devicon-postgresql-plain colored',
+
+      // Python
+      Python:
+        'devicon-python-plain colored',
+
+      // Pygame
+      Pygame:
+        'devicon-python-plain colored',
+
+      // Figma
+      Figma:
+        'devicon-figma-plain colored',
+
+      // Java
       Java:
         'devicon-java-plain colored',
 
+      // Firebase
       Firebase:
         'devicon-firebase-plain colored'
+
     };
 
-    return icons[technology] ?? '';
+    return (
+      icons[technology] ??
+      ''
+    );
+
   }
+
 }

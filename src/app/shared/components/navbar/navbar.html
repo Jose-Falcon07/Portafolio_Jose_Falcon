@@ -6,9 +6,9 @@
       class="navbar__logo"
       (click)="closeMenu()"
     >
-      <img 
-      src="logo.png"
-      alt="Logo JF"
+      <img
+        src="logo.png"
+        alt="Logo JF"
       >
     </a>
 
@@ -16,29 +16,63 @@
       class="navbar__links"
       [class.navbar__links--open]="menuOpen()"
     >
-      <a href="#inicio" (click)="closeMenu()" i18n>
+
+      <a
+        href="#inicio"
+        (click)="closeMenu()"
+        i18n
+      >
         Inicio
       </a>
 
-      <a href="#sobre-mi" (click)="closeMenu()" i18n>
+      <a
+        href="#sobre-mi"
+        (click)="closeMenu()"
+        i18n
+      >
         Sobre mí
       </a>
 
-      <a href="#habilidades" (click)="closeMenu()" i18n>
+      <a
+        href="#habilidades"
+        (click)="closeMenu()"
+        i18n
+      >
         Habilidades
       </a>
 
-      <a href="#proyectos" (click)="closeMenu()" i18n>
+      <a
+        href="#certificaciones"
+        (click)="closeMenu()"
+        i18n
+      >
+        Certificaciones
+      </a>
+
+      <a
+        href="#proyectos"
+        (click)="closeMenu()"
+        i18n
+      >
         Proyectos
       </a>
 
-      <a href="#experiencia" (click)="closeMenu()" i18n>
+      <a
+        href="#experiencia"
+        (click)="closeMenu()"
+        i18n
+      >
         Experiencia
       </a>
 
-      <a href="#contacto" (click)="closeMenu()" i18n>
+      <a
+        href="#contacto"
+        (click)="closeMenu()"
+        i18n
+      >
         Contacto
       </a>
+
     </nav>
 
     <div class="navbar__actions">
@@ -66,13 +100,14 @@
             : 'Cambiar a tema oscuro'
         "
       >
-      
-      @if (theme() === 'dark') {
-        ☀
-      } @else {
-        ☾
-      }
-    </button>
+
+        @if (theme() === 'dark') {
+          ☀
+        } @else {
+          ☾
+        }
+
+      </button>
 
       <a
         href="#contacto"

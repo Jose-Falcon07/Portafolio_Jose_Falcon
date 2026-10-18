@@ -7,6 +7,7 @@ import { Skills } from './features/skills/skills';
 import { Projects } from './features/projects/projects';
 import { Contact } from './features/contact/contact';
 import { Experience } from './features/experience/experience';
+import {Certifications} from './features/certifications/certifications';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { Experience } from './features/experience/experience';
     Projects,
     Contact,
     Experience,
+    Certifications
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'

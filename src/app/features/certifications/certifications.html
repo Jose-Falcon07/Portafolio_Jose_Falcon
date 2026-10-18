@@ -1,0 +1,111 @@
+<section
+  class="certifications"
+  id="certificaciones"
+>
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span
+        class="section-heading__eyebrow"
+        i18n
+      >
+        Certificaciones
+      </span>
+
+
+      <h2 i18n>
+        Formación que
+        <span>respalda mis conocimientos</span>
+      </h2>
+
+
+      <p i18n>
+        Certificaciones y cursos completados en bases de datos,
+        ciberseguridad, Linux y tecnologías relacionadas con
+        el desarrollo de software.
+      </p>
+
+    </div>
+
+
+    <div class="certifications__grid">
+
+      @for (
+        certification of certifications;
+        track certification.id
+      ) {
+
+        <article class="certification-card">
+
+          <div class="certification-card__top">
+
+            <div
+              class="
+                certification-card__badge
+                certification-card__badge--{{ certification.id }}
+              "
+            >
+              {{ certification.badge }}
+            </div>
+
+
+            <span class="certification-card__year">
+              {{ certification.year }}
+            </span>
+
+          </div>
+
+
+          <div class="certification-card__content">
+
+            <span
+              class="certification-card__institution"
+            >
+              {{ certification.institution }}
+            </span>
+
+
+            <h3>
+              {{ certification.title }}
+            </h3>
+
+
+            <p>
+              {{ certification.details }}
+            </p>
+
+          </div>
+
+
+          @if (certification.certificateUrl) {
+
+            <a
+              [href]="certification.certificateUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="certification-card__link"
+            >
+
+              <span i18n>
+                Ver certificado
+              </span>
+
+              <span>
+                ↗
+              </span>
+
+            </a>
+
+          }
+
+        </article>
+
+      }
+
+    </div>
+
+  </div>
+
+</section>
