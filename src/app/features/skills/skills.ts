@@ -20,8 +20,9 @@ interface SkillGroup {
 export class Skills {
 
   skillGroups: SkillGroup[] = [
+
     {
-      title: 'Frontend',
+      title: $localize`Frontend`,
       skills: [
         {
           name: 'Angular',
@@ -43,7 +44,7 @@ export class Skills {
     },
 
     {
-      title: 'Backend',
+      title: $localize`Backend`,
       skills: [
         {
           name: 'Java',
@@ -69,7 +70,7 @@ export class Skills {
     },
 
     {
-      title: 'Bases de datos',
+      title: $localize`Bases de datos`,
       skills: [
         {
           name: 'PostgreSQL',
@@ -91,7 +92,7 @@ export class Skills {
     },
 
     {
-      title: 'Cloud',
+      title: $localize`Cloud`,
       skills: [
         {
           name: 'AWS',
@@ -109,7 +110,7 @@ export class Skills {
     },
 
     {
-      title: 'Herramientas',
+      title: $localize`Herramientas`,
       skills: [
         {
           name: 'Git',
@@ -133,5 +134,6 @@ export class Skills {
         }
       ]
     }
+
   ];
 }
