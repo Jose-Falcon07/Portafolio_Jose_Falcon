@@ -37,7 +37,7 @@ export class Projects {
       `,
 
       image:
-        '/images/projects/carta-blanca.png',
+        'images/projects/carta-blanca.png',
 
       technologies: [
         'Ionic',
@@ -75,7 +75,7 @@ export class Projects {
       `,
 
       image:
-        '/images/projects/skyword.png',
+        'images/projects/skyword.png',
 
       technologies: [
         'Python',
