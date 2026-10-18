@@ -15,7 +15,149 @@
   <source> Contacto </source>
   <target> Contact </target>
 </trans-unit>
-    
+<trans-unit id="5556702715325586704" datatype="html">
+  <source> Certificaciones </source>
+  <target> Certifications </target>
+</trans-unit>
+
+<trans-unit id="322937246984835816" datatype="html">
+  <source>
+        Sistema de gestión de archivo físico desarrollado para organizar
+        racks, módulos, alturas, ubicaciones, cajas y carpetas, incorporando
+        autenticación, control de usuarios, roles y operaciones sobre la
+        estructura del archivo.
+      </source>
+  <target>
+        Physical archive management system developed to organize
+        racks, modules, levels, locations, boxes, and folders, including
+        authentication, user management, roles, and operations across
+        the archive structure.
+      </target>
+</trans-unit>
+
+<trans-unit id="3496882562977938439" datatype="html">
+  <source>
+        Concepto de un juego educativo de vocabulario en inglés donde
+        el jugador controla un avión y debe seleccionar la palabra
+        correcta mientras avanza por distintos desafíos.
+      </source>
+  <target>
+        Concept for an educational English vocabulary game where
+        the player controls an airplane and must select the correct
+        word while progressing through different challenges.
+      </target>
+</trans-unit>
+
+<trans-unit id="2009832046933806302" datatype="html">
+  <source>
+          Nuevas aplicaciones y experimentos serán añadidos próximamente.
+        </source>
+  <target>
+          New applications and experiments will be added soon.
+        </target>
+</trans-unit>
+
+<trans-unit id="1261883901094496008" datatype="html">
+  <source> Gestión de archivos </source>
+  <target> File management </target>
+</trans-unit>
+
+<trans-unit id="5389579537601656379" datatype="html">
+  <source> Usuarios y roles </source>
+  <target> Users and roles </target>
+</trans-unit>
+
+<trans-unit id="5286535935322776884" datatype="html">
+  <source> Base de datos </source>
+  <target> Database </target>
+</trans-unit>
+
+<trans-unit id="3116245494827424101" datatype="html">
+  <source>
+                Mensaje enviado correctamente.
+                Gracias por contactarme.
+              </source>
+  <target>
+                Message sent successfully.
+                Thank you for contacting me.
+              </target>
+</trans-unit>
+
+<trans-unit id="3324240489792390693" datatype="html">
+  <source>
+                No se pudo enviar el mensaje.
+                Inténtalo nuevamente.
+              </source>
+  <target>
+                The message could not be sent.
+                Please try again.
+              </target>
+</trans-unit>
+
+<trans-unit id="4879081246375670567" datatype="html">
+  <source>
+              Ocurrió un error al enviar el mensaje.
+              Inténtalo nuevamente.
+            </source>
+  <target>
+              An error occurred while sending the message.
+              Please try again.
+            </target>
+</trans-unit>
+
+<trans-unit id="828950612312347305" datatype="html">
+  <source>
+    Formación que
+    <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>
+    respalda mis conocimientos
+    <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+  </source>
+  <target>
+    Training that
+    <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>
+    supports my knowledge
+    <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+  </target>
+</trans-unit>
+
+<trans-unit id="1554622516902734011" datatype="html">
+  <source>
+    Certificaciones y cursos completados en bases de datos,
+    ciberseguridad, Linux y tecnologías relacionadas con
+    el desarrollo de software.
+  </source>
+  <target>
+    Certifications and completed courses in databases,
+    cybersecurity, Linux, and technologies related to
+    software development.
+  </target>
+</trans-unit>
+
+<trans-unit id="2544220811151757673" datatype="html">
+  <source> Ver certificado </source>
+  <target> View certificate </target>
+</trans-unit>
+
+<trans-unit id="225469176949422227" datatype="html">
+  <source>
+    Desarrollador de Software Jr. creando soluciones modernas,
+    funcionales y escalables.
+  </source>
+  <target>
+    Junior Software Developer creating modern,
+    functional, and scalable solutions.
+  </target>
+</trans-unit>
+
+<trans-unit id="8401618325571915578" datatype="html">
+  <source> Todos los derechos reservados. </source>
+  <target> All rights reserved. </target>
+</trans-unit>
+
+<trans-unit id="7691127955124420415" datatype="html">
+  <source> Volver arriba ↑ </source>
+  <target> Back to top ↑ </target>
+</trans-unit>    
     <body>
       <trans-unit id="4568881425827283863" datatype="html">
         <source> Sobre mí </source>

@@ -17,7 +17,6 @@
       ]
     }
   ],
-
   "hosting": {
     "public": "dist/portfolio-jose/browser",
     "ignore": [

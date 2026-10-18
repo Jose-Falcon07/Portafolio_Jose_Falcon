@@ -8,6 +8,7 @@ import { Projects } from './features/projects/projects';
 import { Contact } from './features/contact/contact';
 import { Experience } from './features/experience/experience';
 import {Certifications} from './features/certifications/certifications';
+import { Footer } from './shared/components/footer/footer';
 
 @Component({
   selector: 'app-root',
@@ -19,8 +20,9 @@ import {Certifications} from './features/certifications/certifications';
     Projects,
     Contact,
     Experience,
-    Certifications
-  ],
+    Certifications,
+    Footer
+],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

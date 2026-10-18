@@ -82,6 +82,8 @@
 
     color: var(--text-secondary);
 
+    white-space: nowrap;
+
     transition:
       color 0.25s ease,
       transform 0.25s ease;
